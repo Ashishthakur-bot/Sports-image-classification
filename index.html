@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sports Image Classifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🏆 Sports Image Classifier</h1>
+
+    <div id="drop-area">
+        <p>📂 Drag & Drop Image</p>
+        <p class="or">or</p>
+        <input type="file" id="fileElem" accept="image/*" hidden>
+        <button onclick="document.getElementById('fileElem').click()">Select Image</button>
+    </div>
+
+    <div class="image-box">
+        <img id="preview" />
+    </div>
+
+    <h2 id="result"></h2>
+    <div id="bars"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
